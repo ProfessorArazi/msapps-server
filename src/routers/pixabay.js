@@ -12,7 +12,7 @@ router.get("/pixabay", async (req, res) => {
   const { category } = req.query;
   axios(`${api}${category}`)
     .then((response) => {
-      const images = response.data.hits;
+      const images = response.data.hits.slice(0,9);
       res.status(200).send({
         images,
       });
