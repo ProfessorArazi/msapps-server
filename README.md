@@ -1,4 +1,4 @@
-## Run `npm install`
+### Run `npm install`
 
 ## Available Scripts
 
